@@ -1,0 +1,36 @@
+{
+  "name": "concordium-testnet-starter",
+  "version": "0.0.1",
+  "description": "This project can be use as a starting point for developing your new Concordium SubQuery project",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "subql build",
+    "codegen": "subql codegen",
+    "start:docker": "docker-compose pull && docker-compose up --remove-orphans",
+    "dev": "subql codegen && subql build && docker-compose pull && docker-compose up --remove-orphans",
+    "prepack": "rm -rf dist && npm run build",
+    "test": "subql build && subql-node-concordium test"
+  },
+  "homepage": "https://github.com/subquery/concordium-subql-starter",
+  "repository": "github:subquery/concordium-subql-starter",
+  "files": [
+    "dist",
+    "schema.graphql",
+    "project.yaml"
+  ],
+  "author": "SubQuery Team",
+  "license": "MIT",
+  "dependencies": {
+    "@subql/common": "latest",
+    "@subql/types-concordium": "latest",
+    "@subql/validator": "latest",
+    "@concordium/node-sdk": "9.4.0",
+    "assert": "^2.0.0"
+  },
+  "devDependencies": {
+    "@subql/cli": "latest",
+    "@subql/testing": "latest",
+    "@subql/types": "latest",
+    "typescript": "4.5.5"
+  }
+}
