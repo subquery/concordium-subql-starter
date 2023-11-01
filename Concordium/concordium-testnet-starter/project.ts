@@ -45,7 +45,7 @@ const project: ConcordiumProject = {
   dataSources: [
     {
       kind: ConcordiumDatasourceKind.Runtime,
-      startBlock: 490000,
+      startBlock: 490000, // This changes your indexing start block, set this higher to skip initial blocks with less data
       mapping: {
         file: "./dist/index.js",
         handlers: [
@@ -86,4 +86,5 @@ const project: ConcordiumProject = {
   ],
 };
 
+// Must set default to the project instance
 export default project;
