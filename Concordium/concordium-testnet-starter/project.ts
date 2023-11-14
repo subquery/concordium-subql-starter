@@ -40,7 +40,7 @@ const project: ConcordiumProject = {
      * Public nodes may be rate limited, which can affect indexing speed
      * When developing your project we suggest getting a private API key
      */
-    endpoint: ["node.testnet.concordium.com:20000"],
+    endpoint: ["http://node.testnet.concordium.com:20000"],
   },
   dataSources: [
     {
