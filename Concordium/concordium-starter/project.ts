@@ -33,14 +33,14 @@ const project: ConcordiumProject = {
      * chainId is the network identifier of the blockchain
      * In Concordium it is always the genesis hash of the network (hash of the first block)
      */
-    chainId: "4221332d34e1694168c2a0c0b3fd0f273809612cb13d000d5c2e00e85f50f796",
+    chainId: "9dd9ca4d19e9393877d2c44b70f89acbfc0883c2243e5eeaecc0d1cd0503f478",
     /**
      * These endpoint(s) should be public non-pruned archive node
      * We recommend providing more than one endpoint for improved reliability, performance, and uptime
      * Public nodes may be rate limited, which can affect indexing speed
      * When developing your project we suggest getting a private API key
      */
-    endpoint: ["http://node.testnet.concordium.com:20000"],
+    endpoint: ["https://grpc.mainnet.concordium.software:20000"],
   },
   dataSources: [
     {
