@@ -1,9 +1,7 @@
 {
   "name": "subql-starters",
   "private": true,
-  "workspaces": [
-    "Concordium/*"
-  ],
+  "workspaces": ["Concordium/*"],
   "scripts": {
     "codegen": "yarn workspaces run codegen",
     "build": "yarn workspaces run build"
